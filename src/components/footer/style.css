@@ -1,0 +1,173 @@
+.footer-container {
+  position: relative;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  font-size: 50px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  font-weight: 700;
+  color: #fff;
+  background-image: radial-gradient(#3c64e8, #000000);
+  background-repeat: no-repeat;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+
+div.business-card {
+  height: 427px;
+  width: 320px;
+  margin-left: -160px;
+  margin-top: -213.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+div.business-card:hover .flipper, div.business-card.hover .flipper {
+  -webkit-transform: rotateY(180deg) rotateZ(90deg);
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+
+div.flipper {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  -webkit-transform-origin: center 160px;
+  -ms-transform-origin: center 160px;
+  transform-origin: center 160px;
+}
+
+div.front, div.back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 427px;
+  width: 320px;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+}
+
+div.front {
+  background-color: white;
+  z-index: 0;
+}
+div.front:before, div.front:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 160px;
+  border-style: solid;
+  border-color: transparent;
+}
+div.front:before {
+  border-top-color: #288fbd;
+  border-left-color: #288fbd;
+  z-index: 2;
+}
+div.front:after {
+  border-top-color: #005d8c;
+  border-right-color: #005d8c;
+}
+div.front div.name {
+  position: absolute;
+  bottom: 8.5px;
+  left: 85px;
+}
+div.front div.name span {
+  display: block;
+  font-size: 40px;
+  line-height: 45px;
+}
+div.front div.name span.first {
+  color: #005d8c;
+}
+div.front div.name span.last {
+  color: #288fbd;
+}
+div.front div.name span.title {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+div.back {
+  background-color: #005d8c;
+  color: white;
+  width: 427px;
+  height: 320px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: rotateY(180deg) rotateZ(90deg);
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+div.back div.container-sm {
+  float: left;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+div.back div.container-lg {
+  float: left;
+  width: 60%;
+  margin-top: 2rem;
+}
+div.back figure.logo-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: -60px -60px;
+}
+div.back figure.logo-white:before, div.back figure.logo-white:after {
+  display: block;
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+}
+div.back figure.logo-white:before {
+  top: 0;
+  left: 0;
+  border-width: 60px;
+  border-top-color: white;
+  border-left-color: white;
+  z-index: 2;
+}
+div.back figure.logo-white:after {
+  bottom: 0;
+  right: 0;
+  border-width: 56px;
+  border-right-color: white;
+}
+div.back a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+div.back a:hover {
+  text-decoration: underline;
+}
+div.back ul.social {
+  font-size: 1.5rem;
+}
+div.back ul.social li {
+  margin-top: 1rem;
+}
+div.back ul.social li:first-child {
+  margin-top: 6rem;
+}
