@@ -3,7 +3,6 @@ import Portfolio from './components/portfolio';
 import Header from './components/header';
 import Menu from './components/menu';
 import Footer from './components/footer';
-import './App.css';
 import './reset.css';
 import './style.css';
 
