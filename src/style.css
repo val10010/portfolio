@@ -21,12 +21,7 @@ html {
   color: #0f594d;
   background-color: #f2e6cd;
 }
-@media only screen and (min-width: 1048px) {
-  #root {
-    /* hide horizontal scroll bar in IE */
-    overflow-x: hidden;
-  }
-}
+
 
 a {
   color: #93a748;
@@ -154,7 +149,7 @@ Main Components
     background-image: url("./img/img-4.jpg");
   }
 }
-@media only screen and (min-width: 1048px) {
+@media only screen and (min-width: 830px) {
   .cd-fixed-background {
     background-attachment: fixed;
   }
